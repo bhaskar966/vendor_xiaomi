@@ -2969,6 +2969,9 @@ cc_prebuilt_binary {
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/batterysecret"],
 	check_elf_files: false,
+	strip: {
+		none: true,
+	},
 	prefer: true,
 	soc_specific: true,
 }
@@ -2978,6 +2981,9 @@ cc_prebuilt_binary {
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/cnss-daemon"],
 	check_elf_files: false,
+	strip: {
+		none: true,
+	},
 	prefer: true,
 	soc_specific: true,
 }
@@ -2987,15 +2993,21 @@ cc_prebuilt_binary {
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/mi_thermald"],
 	check_elf_files: false,
+	strip: {
+		none: true,
+	},
 	prefer: true,
 	soc_specific: true,
 }
 
 cc_prebuilt_binary {
-	name: "sensors",
+	name: "sensors.qti",
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/sensors.qti"],
 	check_elf_files: false,
+	strip: {
+		none: true,
+	},
 	prefer: true,
 	soc_specific: true,
 }
@@ -3005,6 +3017,9 @@ cc_prebuilt_binary {
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/thermal-engine"],
 	check_elf_files: false,
+	strip: {
+		none: true,
+	},
 	prefer: true,
 	soc_specific: true,
 }

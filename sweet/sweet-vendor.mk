@@ -492,5 +492,5 @@ PRODUCT_PACKAGES += \
     batterysecret \
     cnss-daemon \
     mi_thermald \
-    sensors \
+    sensors.qti \
     thermal-engine
